@@ -236,7 +236,7 @@ fn simulate(
             (&matchplayers.1, &matchplayers.0)
         };
 
-        /// XXX: use information about number of opponents instead of hardcoding to 4
+        // XXX: use information about number of opponents instead of hardcoding to 4
         let mut opp_wins = Vec::with_capacity(4);
         players_copy.entry(winner.to_string()).and_modify(|e| {
             e.add_win();
